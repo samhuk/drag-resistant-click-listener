@@ -1,0 +1,17 @@
+{
+  "name": "drag-resistant-click-listener",
+  "version": "1.0.0",
+  "description": "A click listener that is resistant to mouse drag movements",
+  "main": "build/index.js",
+  "repository": "https://github.com/samhuk/drag-resistant-click-listener",
+  "scripts": {
+    "build": "tsc"
+  },
+  "types": "build/index.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.6.3"
+  }
+}
