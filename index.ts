@@ -1,9 +1,9 @@
-export type Position = { x: number, y: number }
+type Position = { x: number, y: number }
 
 /**
  * Options for the drag-resistant click event listener
  */
-export type DragResistantClickEventListenerOptions = {
+export type DragResistantClickListenerOptions = {
   /**
    * The element to add the listener to
    */
@@ -24,9 +24,9 @@ export type DragResistantClickEventListenerOptions = {
   thresholdPx?: number
 }
 
-export const distanceBetween = (p1: Position, p2: Position) => Math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2)
+const distanceBetween = (p1: Position, p2: Position) => Math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2)
 
-export const addDragResistantClickEventListener = (options: DragResistantClickEventListenerOptions) => {
+export const addDragResistantClickListener = (options: DragResistantClickListenerOptions) => {
   const thresholdPx = options.thresholdPx ?? 10
 
   options.element.addEventListener('mousedown', e => {
